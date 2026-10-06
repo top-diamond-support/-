@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>問い合わせ|エネルギーソリューション</title>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="on_border">
+                <div class="logo_section">
+                    <img width="8%" src="images/logo_ellipse.svg" alt="会社ロゴ" class="logo">
+                    <div class="text_block">
+                        <h1 class="seo_text">BCP対策のアドバイザー</h1>
+                        <div class="company_name">株式会社エネルギーソリューション</div>
+                    </div>
+                </div>
+                <!-- ハンバーガーアイコン -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="main_nav" id="navMenu">
+                    <ul>
+                        <li class="nav_top"><a href="index.html">TOP</a></li>
+                        <li class="nav_BCP"><a href="bcp.html">BCP対策</a></li> 
+                        <li class="nav_hojo"><a href="hojokin.html">補助金・交付金</a></li> 
+                        <li class="nav_contact"><a href="contact.html">お問い合わせ</a></li> 
+                        <li class="dropdown">
+                            <button class="dropbtn">その他</button>
+                            <ul class="dropdown-content">
+                                <li><a href="machine.html">機器紹介</a></li>
+                                <li><a href="flow.html">導入までの流れ</a></li>
+                                <li><a href="about.html">会社案内</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="contact">
+                <h3>まずはお気軽にご相談ください</h3>
+                <p>
+                施設の安心づくりやBCP対策、エネルギー設備に関するご相談を、専門スタッフが丁寧にサポートいたします。<br>
+                「とりあえず話だけ聞きたい」といったご相談も大歓迎です。<br>
+                どうぞお気軽にお問い合わせください。
+                </p>
+                <div id="contact_main">
+                    <img src="images/family_img.jpg" id="img_family">
+                    <h4>お問い合わせフォーム</h4>
+                    <form action="send.php" method="post">
+                        <table class="form-table">
+                            <tr>
+                                <th>
+                                    <label for="sisetu_name">施　設　名</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="sisetu_name" name="sisetu_name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="contact_name">ご 担 当 者 名<br>（必　須）</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="contact_name" name="contact_name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="position">役　職　 /　所　属</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="position" name="position">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="email">メールアドレス<br>（必　須）</label>
+                                </th>
+                                <td>
+                                    <input type="email" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="tel">電　話　番　号</label>
+                                </th>
+                                <td>
+                                    <input type="tel" id="tel" name="tel" placeholder="例：0312345678(ハイフンなし)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="message" id="contact_message">お問い合わせ内容</label>
+                                </th>
+                                <td>
+                                    <textarea id="message" name="message" rows="10" onkeypress="if(event.key === 'Enter' && !event.shiftKey) event.preventDefault();"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <p id=con_p1>※ご記入いただいた内容は、プライバシーポリシーに基づき安全に管理されます。<br>
+                        ※お問い合わせ後、2営業日以内に担当よりご連絡いたします。</p>
+                        <div id="send_b">
+                            <button type="submit">送　信</button>
+                        </div>
+                    </form>
+                </div>  
+                <img src="images/children_straight_img.jpg" id="contact_children">
+            </section>
+        </main>
+        <footer>
+            <small>© 2025 Energy Solution Co., Ltd. All rights reserved.<br>
+            For a brighter tomorrow</small>
+        </footer>
+    </body>
+</html>
